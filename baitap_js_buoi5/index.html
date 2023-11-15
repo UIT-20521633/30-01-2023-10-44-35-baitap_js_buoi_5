@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Quản lý tuyển sinh -->
+    <div class="container">
+        <div id="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white ">QUẢN LÝ TUYỂN SINH</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Điểm chuẩn của hội đồng:</label>
+                            <input type="number" name="" id="txbDiemChuan" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Điểm môn thi 1 của thí sinh:</label>
+                            <input type="number" name="" id="txbDiem1" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Điểm môn thi 2 của thí sinh:</label>
+                            <input type="number" name="" id="txbDiem2" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Điểm môn thi 3 của thí sinh:</label>
+                            <input type="number" name="" id="txbDiem3" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label>Khu vực:</label>
+                                    <select class="form-control" id="KhuVuc">
+                                        <option>---Chọn khu vực---</option>
+                                        <option value="2">Khu vực A</option>
+                                        <option value="1">Khu vực B</option>
+                                        <option value="0.5">Khu vực C</option>
+                                        <option value="0">Không thuộc các khu vực trên</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Đối tượng dự thi: </label>
+                            <select class="form-control" id="DoiTuong">
+                                <option>---Chọn đối tượng---</option>
+                                <option value="2.5">Đối tượng 1</option>
+                                <option value="1.5">Đối tượng 2</option>
+                                <option value="1">Đối tượng 3</option>
+                                <option value="0">Không thuộc các đối tượng trên</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="btnTinhDiem" class="btn btn-danger">Tính Điểm</button>
+                        </div>
+                    </div>
+                    <div id="footerDiem" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Tính tiền điện -->
+    <div class="container">
+        <div id="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white ">TÍNH TIỀN ĐIỆN</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>TÊN:</label>
+                            <input type="text" name="" id="txbTen" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Số Kw:</label>
+                            <input type="number" name="" id="txbSoKw" class="form-control" value="">
+                        </div>
+                        <div>
+                            <button id="btnTinhTienDien" class="btn btn-danger">Tính Tiền</button>
+                        </div>
+                    </div>
+                    <div id="footerTienDien" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Tính tiền thuế -->
+    <div class="container">
+        <div id="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white ">TÍNH TIỀN THUẾ</div>
+                    <div class="card-body">
+                        <label>THÔNG TIN CÁ NHÂN</label>
+                        <div class="form-group">
+                            <label>Họ tên:</label>
+                            <input type="text" name="" id="txbHoTen" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Tổng thu nhập năm(tr):</label>
+                            <input type="number" name="" id="txbTongThuNhap" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Số người phụ thuộc:</label>
+                            <input type="number" name="" id="txbSoNguoi" class="form-control" value="">
+                        </div>
+                        <div>
+                            <button id="btnTinhTienThue" class="btn btn-danger">Tính Tiền Thuế</button>
+                        </div>
+                    </div>
+                    <div id="footerTienThue" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Tính tiền cáp -->
+    <div class="container">
+        <div id="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white ">TÍNH TIỀN CÁP</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Mã Khách Hàng:</label>
+                            <input type="text" name="" id="txbMaKH" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Loại Khách Hàng:</label>
+                            <select class="form-control" id="loaiKhachHang" onchange="showHiddenConnect()">
+                                <option>---Chọn loại khách hàng---</option>
+                                <option value="CN">NHÀ DÂN</option>
+                                <option value="DN">DOANH NGHIỆP</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="SoKetNoiGroup">
+                            <label>Số kết nối:</label>
+                            <input type="number" name="" id="txbSoKetNoi" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Số kênh cao cấp:</label>
+                            <input type="number" name="" id="txbSoKenh" class="form-control" value="">
+                        </div>
+                        <div>
+                            <button id="btnTinhTienCap" class="btn btn-danger">Tính Tiền Cáp</button>
+                        </div>
+                    </div>
+                    <div id="footerTienCap" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
